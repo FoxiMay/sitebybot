@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>THIS SITE WAS written BY BOT</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">This site was written by YouChat</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    
+    <div class="posts">
+      <div class="post">
+        <h2>My First Post</h2>
+        <p>This is my first post on my blog.</p>
+      </div>
+    </div>
+    
+    <div class="posts">
+    <div class="post">
+        <h2>This is Random token and Image generator</h2>
+    </div>
+</div>
+<p id="random-string"></p>
+<script> function generateRandomString(length) { var result = ''; var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'; var charactersLength = characters.length; for ( var i = 0; i < length; i++ ) { result += characters.charAt(Math.floor(Math.random() * charactersLength)); } return result; }
+
+var randomString = generateRandomString(60); document.getElementById('random-string').innerHTML = randomString; </script>
+<script>
+    var images = ["https://you.com/proxy?url=https%3A%2F%2Ftse3.explicit.bing.net%2Fth%3Fid%3DOIP.4d7Emr_d4fJnEE6zK7pj_wHaFK%26pid%3DApi", "https://you.com/proxy?url=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.pOOJgs6wEk-JxFXyfqFIxAHaE8%26pid%3DApi", "https://you.com/proxy?url=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.crKItHwBSgH1s8Jhod1kfQHaES%26pid%3DApi"];
+    var randomImage = images[Math.floor(Math.random() * images.length)];
+    document.write('<img src="' + randomImage + '"/>');
+</script>
+
+  </body>
+</html>
